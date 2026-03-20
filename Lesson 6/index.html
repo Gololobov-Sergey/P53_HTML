@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            a{
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                background-color: yellow;
+                color: blue;
+                padding: 10px 20px;
+                border-radius: 20px;
+                border: 2px solid blue;
+                
+                animation: anime1 3s linear alternate infinite;
+                
+                transition: all 0.5s ease-in-out 0s;
+                
+                /*transform-origin: left top;*/
+                
+                /*transform: translate(100px, 100px);*/
+                /*transform: scale(1.4);*/
+                /*transform: rotate(30deg);*/
+                /*transform: skewX(-20deg);*/
+                /*transform: perspective(1px);*/
+                /*perspective: 5px;*/
+            }
+            
+            a:hover{
+                background-color: blue;
+                color: yellow;
+                border: 2px solid yellow;
+                 /*transform: rotateY(-90deg);*/
+            }
+            
+            h1{
+                animation: anime1 3s linear alternate forwards 3s;
+                transform-origin: right;
+            }
+            
+            @keyframes anime1
+            {
+                0%{ margin-left: 0;}
+                100%{margin-left: 600px;}
+            }
+        
+        </style>
+    </head>
+    <body>
+        <h1>Hello</h1>
+        <a href="">Click Me</a>
+        
+        
+        
+    </body>
+</html>

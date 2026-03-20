@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            .planka {
+                border: 3px solid #d57905;
+                width: 500px;
+            }
+
+            .kubik {
+                width: 50px;
+                height: 50px;
+                background-color: #d57905;
+                animation: a1 3s linear alternate infinite;
+            }
+
+            @keyframes a1 {
+                from {
+                    margin-left: 0;
+                }
+                to {
+                    margin-left: 450px;
+                }
+            }
+
+            img {
+                filter: grayscale();
+                width: 100px;
+                display: block;
+                margin: auto;
+            }
+
+            fav {
+                width: 600px;
+                margin: auto;
+            }
+
+            img:hover {
+                transition: all 3s ease 0s;
+                transform: scale(5);
+                filter: grayscale(0);
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="planka">
+            <div class="kubik"></div>
+        </div>
+
+        <div class="fav"><img src="pics/favorites.png" alt="" /></div>
+    </body>
+</html>

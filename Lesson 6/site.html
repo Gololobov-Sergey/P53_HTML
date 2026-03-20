@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+        .container
+        {
+            width: 800px;
+            margin: auto;
+            background-color: antiquewhite;
+            height: 400px;
+            overflow: hidden;
+        }
+        .p1
+        {
+            margin-top: 402px;
+            transform: rotate(-12deg) scale(0.6);
+            float: left;
+            animation: a1 2s linear forwards;
+        }
+        
+        .p2
+        {
+            margin-top: 419px;
+            transform: rotate(-149deg) scale(0.9);
+            animation: a1 2s linear forwards 0.5s;
+            
+        }
+        
+        @keyframes a1
+        {
+            from{margin-top: 400px;}
+            to{margin-top: 0;}
+        }
+    </style>
+	
+	
+	
+</head>
+<body>
+	<div class="container">
+		<div class="p1">
+		    <img src="pics/book.png" alt="">
+        </div>
+        <div class="p2">
+		    <img src="pics/pallete.png" alt="">
+        </div>
+	</div>
+</body>
+</html>
